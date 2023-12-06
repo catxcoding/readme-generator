@@ -1,6 +1,8 @@
 # readme-generator
 09 Node.js Challenge: Professional README Generator
 
+---
+
 ## User Story (from challenge)
 
 ```md
@@ -30,24 +32,24 @@ THEN I am taken to the corresponding section of the README
 ```
 
 ## Features
-```md
+
 - **Automated README Creation:** Creates a README.md with essential sections.
 - **Customizable Input:** Takes user input for project details.
 - **License Badge:** Includes a license badge in the README.
 - **GitHub Info:** Adds GitHub profile and contact links.
-```
+
 
 ## Usage
-```md
+
 - **Install:** Clone the repo and run npm install.
 - **Run:** Use node index.js in the command line.
 - **Input:** Answer questions about your project.
 - **Result:** Get a custom README with a Table of Contents.
-```
+
 
 ## Additional Resources
 
-```md
+
 - **Video Guide:** [Video Link]
 - **Screenshots:** 
-```
+
