@@ -56,7 +56,7 @@ const questions = [
   
 
 // Function to write README file
-function writeToFile(fileName, response) {
+function writeToFile(response) {
   let markdown = generateMarkdown(response);
 
   // Check if the directory exists, if not, create it
@@ -64,7 +64,7 @@ function writeToFile(fileName, response) {
       fs.mkdirSync('./responses');
   }
 
-  fs.writeFile(`./responses/${fileName.split(" ").join("")}.md`, markdown, (err) => {
+  fs.writeFile(`./responses/README.md`, markdown, (err) => {
       if (err) {
           console.error('Error writing file:', err);
       } else {
@@ -78,10 +78,7 @@ function init() {
   inquirer.prompt(questions)
   .then((response) => {
       console.log('Generating README...');
-      writeToFile(response.projectName, response);
-  })
-  .catch((error) => {
-      console.error('Error during initialization:', error);
+      writeToFile(response);
   });
 }
 

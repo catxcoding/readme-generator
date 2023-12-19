@@ -38,18 +38,64 @@ THEN I am taken to the corresponding section of the README
 - **License Badge:** Includes a license badge in the README.
 - **GitHub Info:** Adds GitHub profile and contact links.
 
+## Additional Resources
+
+
+- **Video Demo:** [CLICK HERE](https://youtu.be/naWCc0PbGSo)
+
 
 ## Usage
 
-- **Install:** Clone the repo and run npm install.
-- **Run:** Use node index.js in the command line.
-- **Input:** Answer questions about your project.
-- **Result:** Get a custom README with a Table of Contents.
+Before you begin, ensure you have [Node.js](https://nodejs.org/) installed on your computer. Then, follow these steps:
+
+1. **Clone the Repository**: Clone this repository to your local machine using `git clone <https://github.com/catxcoding/readme-generator.git>`.
+2. **Install Dependencies**: Navigate to the cloned directory in your terminal and run `npm install`. This will install all necessary dependencies, including the Inquirer package.
+
+## Running the Application
+
+To start the application, open your terminal, navigate to the project directory, and run the following command:`node index.js`
+
+## Providing Input
+
+After running the command, the application will prompt you for various details about your project:
+
+- **Project Name**: Enter the name of your project.
+- **Project Description**: Provide a brief description of what your project does.
+- **Installation Instructions**: Detail the steps required to install your project.
+- **Usage Information**: Explain how to use your project. Include examples if possible.
+- **Contribution Guidelines**: Describe how others can contribute to your project.
+- **Test Instructions**: Provide instructions on how to run tests for your project.
+- **License**: Choose a license for your project from the provided list.
+- **GitHub Profile**: Enter your GitHub profile URL.
+- **Email Address**: Provide your email for contact purposes.
+
+## Generating the README
+
+Once you've answered all the prompts:
+
+- The application will generate a `README.md` file in the `./responses` directory.
+
+## Accessing Your README
+
+Navigate to the `./responses` directory in your project folder to find the generated README file. You can then review, edit further if needed, and use it for your project.
+
 
 
 ## Additional Resources
 
+## Resources
 
-- **Video Guide:** [Video Link]
-- **Screenshots:** 
+This project was made possible with the help of the following resources:
+
+**MDN Web Docs**: [MDN Web Docs](https://developer.mozilla.org/)
+
+**W3Schools**: [W3Schools](https://www.w3schools.com/)
+
+**Node.js Documentation**: [Node.js Docs](https://nodejs.org/en/docs/)
+
+**npm Documentation**: [npm Docs](https://docs.npmjs.com/)
+
+**Inquirer.js GitHub Repository**: [Inquirer.js on GitHub](https://github.com/SBoudrias/Inquirer.js)
+
+
 
