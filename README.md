@@ -81,10 +81,15 @@ Navigate to the `./responses` directory in your project folder to find the gener
 
 ## Additional Resources
 **ChatGBT**: For aspects of README
+
 **MDN Web Docs**: [MDN Web Docs](https://developer.mozilla.org/)
+
 **W3Schools**: [W3Schools](https://www.w3schools.com/)
+
 **Node.js Documentation**: [Node.js Docs](https://nodejs.org/en/docs/)
+
 **npm Documentation**: [npm Docs](https://docs.npmjs.com/)
+
 **Inquirer.js GitHub Repository**: [Inquirer.js on GitHub](https://github.com/SBoudrias/Inquirer.js)
 
 
