@@ -42,7 +42,7 @@ THEN I am taken to the corresponding section of the README
 
 
 - **Video Demo:** [CLICK HERE](https://youtu.be/naWCc0PbGSo)
-
+![SCREENSHOT](utils/SCREENSHOT.JPG)
 
 ## Usage
 
@@ -79,22 +79,12 @@ Once you've answered all the prompts:
 
 Navigate to the `./responses` directory in your project folder to find the generated README file. You can then review, edit further if needed, and use it for your project.
 
-
-
 ## Additional Resources
-
-## Resources
-
-This project was made possible with the help of the following resources:
-
+**ChatGBT**: For aspects of README
 **MDN Web Docs**: [MDN Web Docs](https://developer.mozilla.org/)
-
 **W3Schools**: [W3Schools](https://www.w3schools.com/)
-
 **Node.js Documentation**: [Node.js Docs](https://nodejs.org/en/docs/)
-
 **npm Documentation**: [npm Docs](https://docs.npmjs.com/)
-
 **Inquirer.js GitHub Repository**: [Inquirer.js on GitHub](https://github.com/SBoudrias/Inquirer.js)
 
 
