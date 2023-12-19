@@ -1,9 +1,10 @@
-// TODO:Include packages needed for this application
+// packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+
+// array of questions for user input
 const questions = [
     {
       type: 'input',
@@ -11,8 +12,8 @@ const questions = [
       name: 'projectName',
     },
     {
-      type: 'editor',
-      message:'Nice name! Next, give a brief description of your app.',
+      type: 'input',
+      message:'Give a brief description of your app.',
       name: 'description',
     },
     {
@@ -21,7 +22,7 @@ const questions = [
       name: 'install',
     },
     {
-      type: 'editor',
+      type: 'input',
       message: 'How about your project usage? How do you use your application?',
       name: 'usage',
     },
@@ -54,23 +55,35 @@ const questions = [
   ];
   
 
-// TODO: Create a function to write README file
+// Function to write README file
 function writeToFile(fileName, response) {
-    let markDown = generateMarkdown(response);
-  
-    fs.writeFile(fileName, markDown, (err) => err ? console.log(err) : console.log('Success!'));
-  };
-  
+  let markdown = generateMarkdown(response);
 
-// TODO: Create a function to initialize app
+  // Check if the directory exists, if not, create it
+  if (!fs.existsSync('./responses')){
+      fs.mkdirSync('./responses');
+  }
+
+  fs.writeFile(`./responses/${fileName.split(" ").join("")}.md`, markdown, (err) => {
+      if (err) {
+          console.error('Error writing file:', err);
+      } else {
+          console.log('Success! README.md file created.');
+      }
+  });
+}
+
+// Function to initialize app
 function init() {
-    inquirer.prompt(questions)
-    .then((response) => {
-      console.log(response);
-      writeToFile(`./responses/${response.projectName.split(" ").join("")}.md`, response)
-    })
-  };
-  
+  inquirer.prompt(questions)
+  .then((response) => {
+      console.log('Generating README...');
+      writeToFile(response.projectName, response);
+  })
+  .catch((error) => {
+      console.error('Error during initialization:', error);
+  });
+}
 
 // Function call to initialize app
 init();
